@@ -83,11 +83,11 @@ body {
   display: block;
 }
 
-  @media (min-width: 981px) {
-    .navbar a {
-      font-size: 14px;
-      font-weight: 600;
-    }
+@media (min-width: 981px) {
+  .navbar a {
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 .navbar a:hover {
   background-color: #5a2f5b; /* Цвет фона при наведении */
