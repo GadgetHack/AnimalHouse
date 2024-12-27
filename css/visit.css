@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  width: 90%;
 }
 
 #main-header {
@@ -14,6 +15,9 @@ body {
   height: 88px; /* Высота контейнера для логотипа и бургер-меню */
   display: flex;
   align-items: center; /* Центрируем элементы по вертикали */
+  max-width: 100%;
+  box-sizing: border-box; 
+  overflow: hidden;
 
 }
 
@@ -34,10 +38,10 @@ body {
 }
 
 .line {
-  height: 4px; /* Высота линии бургер-меню */
-  width: 30px; /* Ширина линии бургер-меню */
-  background-color: white; /* Цвет линии */
-  margin: 3px 0; /* Отступы между линиями */
+  height: 4px; 
+  width: 30px; 
+  background-color: white;
+  margin: 3px 0; 
 }
 
 .logo_container {
@@ -457,9 +461,21 @@ p{
   font-weight: 400;
   color:#fff;
 }
+
 .item_social_list{
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.item_social_list li a{
+  font-size: 30px;
+  line-height: 30px;
+  color: #18E7E2;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  justify-content: space-between;
 }
 
 #social_item_1{
@@ -467,4 +483,17 @@ p{
   height: 50px;
 background-image: url('../images/facebook-brands-solid.svg');  
 background-size: cover;
+}
+
+
+.fa-brands{
+  color: #18E7E2;
+}
+
+.fa-dashcube{
+  color: white;
+}
+
+.fa-linkedin{
+  font-size: 30px;
 }
